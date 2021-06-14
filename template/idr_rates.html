@@ -1,0 +1,23 @@
+(% extends 'base.html' %)
+
+(% block body %)
+<table class="table table-bordered">
+    <thead class="thead-dark">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    (% for data in datas %)
+    <tr>
+        <td>({ data['code'] })</td>
+        <td>({ data['name'] })</td>
+        <td>({ data['date'] })</td>
+        <td>({ data['inversrate'] })</td>
+    </tr>
+    (% endfor %)
+    </tbody>
+</table>
+(% endblock %)

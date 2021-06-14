@@ -1,0 +1,9 @@
+{% extend 'base.html'%}
+
+{% block body %}
+{% for image in images %}
+((image | safe))
+<a href="(( image.find('a')['href']|safe))" target="_blank">(( image.find('a')
+    image.find('a').find('img')['title'](safe))</a>
+(% endfor %)
+{% end block %}!
